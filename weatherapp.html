@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="./weatherapp.css">
+<script src="https://kit.fontawesome.com/d58d9c0506.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Autour+One&family=Chakra+Petch:ital,wght@1,300&family=Fjalla+One&family=Lobster&family=Mochiy+Pop+One&family=Quicksand:wght@300&family=Roboto+Mono:ital,wght@0,200;1,200&family=Rubik+Distressed&family=Shadows+Into+Light&family=Source+Sans+Pro:ital,wght@1,200&family=Uchen&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="section">
+  <div id="begin">
+      <div class="row">
+          <div class="col-8">
+              <div class="border container" id="start">
+<div id="time">
+                  <div id = "clock" onload="currentTime()"></div>
+
+</div>               <i id="spinner" class="fa-solid fa-spinner"></i>
+                  <div id="first"> </div>
+          </div>
+  </div>
+          <div class="col-4">
+              <input id="city" type="text" placeholder="Enter the city name" class="form-control mt-3 me-5">
+              <button onclick="clickMsg()" type="button" id="search" class="btn btn-light mt-4 ms-5"><i class="fa-solid fa-magnifying-glass"></i></button>
+  <form class="mt-5">
+    <h4><span style="font-size: 30px;">Weather Detailes</span></h4><br>
+                  <div class="mb-3">
+                      <label for="country" class="form-label">Country</label>
+                      <input style="background-color: rgb(151, 184, 184); font-size: 20px;" type="text" class="form-control" id="country" >
+                    </div>
+                    <div class="mb-3">
+                      <label for="humidity" class="form-label">Humidity</label>
+                      <input style="background-color: rgb(151, 184, 184); font-size: 20px;"  type="text" class="form-control" id="humidity" >
+                    </div>
+                    <div class="mb-3">
+                      <label for="wind" class="form-label">Wind</label>
+                      <input style="background-color: rgb(151, 184, 184); font-size: 20px;" type="text" class="form-control" id="wind" >
+                    </div>
+                    <div class="mb-3">
+                      <label for="presure" class="form-label">Presure</label>
+                      <input style="background-color: rgb(151, 184, 184); font-size: 20px;" type="text" class="form-control" id="presure" >
+                    </div>
+  
+  </form> 
+  </div>
+      </div>
+  </div> 
+
+</div>  </body>
+<script src="./weatherapp.js"></script>
+</html>
